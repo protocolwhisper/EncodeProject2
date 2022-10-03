@@ -8,6 +8,6 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["./test", "./src", "./scripts"],//only the "scripts" part.
+  "include": ["./test", "./src", "./scripts", "json-typings.d.ts"],//only the "scripts" part.
   "files": ["./hardhat.config.ts"]
 }

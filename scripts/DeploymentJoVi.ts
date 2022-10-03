@@ -34,7 +34,6 @@ async function main() {
     );
     await ballotContract.deployed();
   
-  console.log(`Ballot contract deployed at ${ballotContract.address}`)
   
   for (let index = 0; index < PROPOSALS.length; index++) {
     const proposal = await ballotContract.proposals(index);
