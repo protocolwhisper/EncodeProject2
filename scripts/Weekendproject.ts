@@ -28,11 +28,12 @@ async function main() {
     // For casting Votes
 
     // For delegate votes 
-    const delegate = await ballotContract.connect(accounts[1].address).delegate(accounts[2].address)
+    const delegate = await ballotContract.connect(accounts[1]).delegate(accounts[2].address)
     const delegatereceipt = await delegate.wait()
     const voterDelegate = await ballotContract.voters(accounts[2].address)
     const weigthDelegate = (voterDelegate.weight).toNumber()
     console.log(weigthDelegate)
+    
 }
 
 main().catch((error) => {
