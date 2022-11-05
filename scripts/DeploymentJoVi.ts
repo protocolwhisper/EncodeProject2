@@ -26,7 +26,7 @@ async function main() {
   PROPOSALS.forEach((element, index) => {
     console.log(`Proposal N. ${index + 1}: ${element}`);
   });
-  const wallet = await new ethers.Wallet( privateKey, provider);
+  const wallet = await new ethers.Wallet(privateKey, provider);
   const signer = wallet.connect(provider);
   const ballotFactory = new Ballot__factory();
   const ballotContract = await ballotFactory.connect(signer).deploy(
