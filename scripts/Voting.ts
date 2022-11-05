@@ -1,5 +1,5 @@
 import { ethers } from 'ethers';
-import BallotJson from '../artifacts/contracts/Ballot.sol/Ballot.json';
+import BallotJson from '../abi/Ballot.json';
 import * as dotenv from 'dotenv';
 dotenv.config();
 
